@@ -1,0 +1,15 @@
+{
+  "no_internet": "Please connect Internet and Try again",
+  "message_common_error": "Something when wrong! Please restart app or contact administrator",
+  "button_try_again": "Try again",
+  "button_close": "Close",
+  "title_error": "Error occurred",
+  "title_notification": "Notification",
+  "btn_yes": "Yes",
+  "btn_no": "No",
+  "btn_ok": "OK",
+  "no_permission": "You don't have permission! Please contact administrator",
+  "error_no_email": "Please enter an email address",
+  "invalid_email": "Invalid email",
+  "invalid_phone": "Invalid phone number"
+}

@@ -1,0 +1,15 @@
+{
+  "no_internet": "Vui lòng kết nối Internet và Thử lại",
+  "message_common_error": "Xảy ra lỗi! Vui lòng khởi động lại hoặc liên hệ quản trị viên",
+  "button_try_again": "Thử lại",
+  "button_close": "Đóng",
+  "title_error": "Xảy ra lỗi",
+  "title_notification": "Thông báo",
+  "btn_yes": "Có",
+  "btn_no": "Không",
+  "btn_ok": "Đồng ý",
+  "no_permission" : "Bạn không được cấp quyền! Vui lòng liên hệ quản trị viên",
+  "error_no_email": "Chưa nhập địa chỉ email",
+  "invalid_email": "Không đúng định dạng email",
+  "invalid_phone": "Số điện thoại không đúng định dạng"
+}
