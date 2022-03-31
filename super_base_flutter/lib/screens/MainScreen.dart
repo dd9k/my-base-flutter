@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:keyboard_visibility/keyboard_visibility.dart';
 import 'package:provider/provider.dart';
+import 'package:super_base_flutter/constants/Constants.dart';
 import 'package:super_base_flutter/constants/SizeConfig.dart';
 import 'package:super_base_flutter/database/Database.dart';
 import 'package:super_base_flutter/screens/AppBarComponent.dart';
@@ -70,6 +71,7 @@ abstract class MainScreenState<T extends MainNotifier> extends State<MainScreen>
     provider.db = Provider.of<Database>(context, listen: false);
     provider.parent = MyApp.of(context);
     provider.preferences = provider.parent.preferences;
+    provider.currentLang = provider.preferences.getString(Constants.KEY_LANGUAGE) ?? Constants.LANG_DEFAULT;
     provider.context = context;
     if (!isInit) {
       isInit = true;

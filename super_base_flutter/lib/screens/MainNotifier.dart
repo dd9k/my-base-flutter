@@ -18,5 +18,6 @@ abstract class MainNotifier extends ChangeNotifier {
   Database db;
   MyApp parent;
   SharedPreferences preferences;
+  String currentLang;
   BuildContext context;
 }

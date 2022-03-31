@@ -8,6 +8,7 @@ import 'package:super_base_flutter/services/AppLocalizations.dart';
 import 'package:super_base_flutter/services/NavigationService.dart';
 import 'package:super_base_flutter/services/ServiceLocator.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:super_base_flutter/themes/AppThemes.dart';
 import 'package:wakelock/wakelock.dart';
 import 'dart:async';
 
@@ -65,7 +66,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
             return MaterialApp(
               title: 'Base flutter',
               themeMode: ThemeMode.light,
-              theme: ThemeData.light(),
+              theme: appThemeData[AppTheme.BlueLight],
               debugShowCheckedModeBanner: false,
               navigatorKey: locator<NavigationService>().navigatorKey,
               home: ChangeNotifierProvider(create: (_) => SplashNotifier(), child: SplashScreen()),
@@ -89,9 +90,9 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver {
     widget.isConnection = isConnection;
     var completer = Completer<String>();
     widget.preferences = await SharedPreferences.getInstance();
-    var lang = widget.preferences.getString(Constants.KEY_LANGUAGE) ?? Constants.EN_CODE;
+    var lang = widget.preferences.getString(Constants.KEY_LANGUAGE) ?? Constants.LANG_DEFAULT;
     if (lang.isEmpty || !Constants.LIST_LANG.contains(lang)) {
-      lang = Constants.EN_CODE;
+      lang = Constants.LANG_DEFAULT;
     }
     completer.complete(lang);
     return completer.future;

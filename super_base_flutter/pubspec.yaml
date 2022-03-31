@@ -46,6 +46,7 @@ dependencies:
   flutter_isolate: ^1.0.0+11
   app_settings: 4.0.4
   keyboard_visibility: ^0.5.2
+  rounded_loading_button: ^1.0.18
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -75,6 +76,7 @@ flutter:
   assets:
     - assets/images/
     - assets/lang/
+    - assets/flare/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
